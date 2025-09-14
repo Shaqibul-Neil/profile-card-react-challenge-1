@@ -1,5 +1,12 @@
 import "./App.css";
 import { Image, Information, Learn } from "./Profile";
+import Contact from "./Contact";
+
+const info = {
+  mobile: "01798043534",
+  link: "www.dsd.com",
+  email: "adaw@gmail.com",
+};
 
 function App() {
   return (
@@ -12,6 +19,9 @@ function App() {
       </div>
       <div>
         <Learn />
+      </div>
+      <div>
+        <Contact {...info} />
       </div>
     </div>
   );
