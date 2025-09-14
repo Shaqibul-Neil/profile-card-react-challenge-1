@@ -1,5 +1,5 @@
 import './App.css';
-import { Image, Information, Learn } from './Profile';
+import { Image, Information, SkillList, Learn } from './Profile';
 import Contact from './Contact';
 import ToDo from './ToDo';
 
@@ -18,6 +18,9 @@ function App() {
       </div>
       <div className="content-div">
         <Information />
+      </div>
+      <div className="content-div">
+        <SkillList />
       </div>
       <div>
         <Learn />

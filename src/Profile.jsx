@@ -1,7 +1,7 @@
-import profileImg from "./assets/profileImg.jpg";
+import profileImg from './assets/profileImg.jpg';
 
 const Image = function () {
-  return <img src={profileImg} alt="" />;
+  return <img src={profileImg} alt="Shakibul Islam" />;
 };
 
 const Information = function () {
@@ -12,20 +12,28 @@ const Information = function () {
         Full-stack web developer. I like to code. Even though I started late,
         I'm determined to make some stride in this sector.
       </p>
-      <div>
-        <h3>Techs I know so far</h3>
-        <Button name="HTML + CSS 💪🏻" colorClass="blue" />
-        <Button name="Tailwind 🪡" colorClass="maroon" />
-        <Button name="Javascript 📜" colorClass="red" />
-        <Button name="React ☺️" colorClass="tomato" />
-        <Button name="Wordpress 📦" colorClass="green" />
-      </div>
     </div>
   );
 };
 
-const Button = function ({ colorClass, name }) {
-  return <button className={colorClass}>{name}</button>;
+const SkillList = () => {
+  return (
+    <div className="SkillList">
+      <Skill skill="HTML & Css" emoji="💪🏻" color="#0000ff42" />
+      <Skill skill="Wordpress" emoji="📦" color="#80000063" />
+      <Skill skill="Javascript" emoji="📜" color="#ff00008a" />
+      <Skill skill="Tailwind" emoji="🪡" color="#ff634793" />
+    </div>
+  );
+};
+
+const Skill = props => {
+  return (
+    <div style={{ backgroundColor: props.color }} className="skill">
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
+    </div>
+  );
 };
 
 const Learn = function () {
@@ -37,4 +45,4 @@ const Learn = function () {
   );
 };
 
-export { Image, Information, Learn };
+export { Image, Information, SkillList, Learn };

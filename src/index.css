@@ -46,26 +46,17 @@ h1 {
   font-size: 25px;
   color: var(--color);
 }
-button {
+.SkillList {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.skill {
   padding: 10px;
   margin: 4px;
+  width: 150px;
   border-radius: 10px;
 }
-.blue {
-  background-color: rgba(0, 0, 255, 0.26);
-}
-.maroon {
-  background-color: rgba(128, 0, 0, 0.39);
-}
-.red {
-  background-color: rgba(255, 0, 0, 0.541);
-}
-.tomato {
-  background-color: rgba(255, 99, 71, 0.575);
-}
-.green {
-  background-color: rgba(0, 128, 0, 0.493);
-}
+
 .borders {
   border: 2px solid wheat;
   margin: 15px;
