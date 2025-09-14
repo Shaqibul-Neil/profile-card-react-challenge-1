@@ -1,14 +1,16 @@
-import "./App.css";
-import { Image, Information, Learn } from "./Profile";
-import Contact from "./Contact";
+import './App.css';
+import { Image, Information, Learn } from './Profile';
+import Contact from './Contact';
+import ToDo from './ToDo';
 
 const info = {
-  mobile: "01798043534",
-  link: "www.dsd.com",
-  email: "adaw@gmail.com",
+  mobile: '01798043534',
+  link: 'www.dsd.com',
+  email: 'adaw@gmail.com',
 };
 
 function App() {
+  const time = 50;
   return (
     <div className="container">
       <div className="img-div">
@@ -20,8 +22,17 @@ function App() {
       <div>
         <Learn />
       </div>
-      <div>
+      <div className="borders">
+        <h3 className="h3">Contact Information</h3>
         <Contact {...info} />
+      </div>
+      <div className="borders">
+        <h3 className="h3">Task List</h3>
+        <ul className="ul">
+          <ToDo task="Learn React" isDone={true} time={time} />
+          <ToDo task="Learn Node" isDone={false} />
+          <ToDo task="Learn C#" isDone={false} />
+        </ul>
       </div>
     </div>
   );

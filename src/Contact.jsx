@@ -1,10 +1,10 @@
 const Contact = ({ mobile, link, email }) => {
   return (
-    <ol>
+    <ul className="ul">
       <li>{mobile}</li>
       <li>{link}</li>
       <li>{email}</li>
-    </ol>
+    </ul>
   );
 };
 export default Contact;
