@@ -13,6 +13,7 @@ const Information = function () {
         I'm determined to make some stride in this sector.
       </p>
       <div>
+        <h3>Techs I know so far</h3>
         <Button name="HTML + CSS 💪🏻" colorClass="blue" />
         <Button name="Tailwind 🪡" colorClass="maroon" />
         <Button name="Javascript 📜" colorClass="red" />
@@ -23,8 +24,17 @@ const Information = function () {
   );
 };
 
-const Button = function (props) {
-  return <button className={props.colorClass}>{props.name}</button>;
+const Button = function ({ colorClass, name }) {
+  return <button className={colorClass}>{name}</button>;
 };
 
-export { Image, Information };
+const Learn = function () {
+  return (
+    <div>
+      <h3>Want to Learn</h3>
+      <p>Technology: </p>
+    </div>
+  );
+};
+
+export { Image, Information, Learn };

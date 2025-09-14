@@ -1,5 +1,5 @@
 import "./App.css";
-import { Image, Information } from "./Profile";
+import { Image, Information, Learn } from "./Profile";
 
 function App() {
   return (
@@ -9,6 +9,9 @@ function App() {
       </div>
       <div className="content-div">
         <Information />
+      </div>
+      <div>
+        <Learn />
       </div>
     </div>
   );
