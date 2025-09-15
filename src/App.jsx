@@ -2,7 +2,7 @@ import './App.css';
 import { Image, Information, SkillList, Learn } from './Profile';
 import Contact from './Contact';
 import ToDo from './ToDo';
-import List from './List';
+import { List, ProfilesFavorites } from './List';
 
 const info = {
   mobile: '01798043534',
@@ -17,6 +17,24 @@ const favorites = [
   'Painting',
   'Watching Movies',
   'Cooking',
+];
+const profilesFavorites = [
+  {
+    name: 'Rafi',
+    favoritePassTime: ['Reading', 'Gaming', 'Jogging'],
+  },
+  {
+    name: 'Sara',
+    favoritePassTime: ['Painting', 'Watching Movies', 'Cooking'],
+  },
+  {
+    name: 'Nil',
+    favoritePassTime: ['Coding', 'Cycling', 'Photography'],
+  },
+  {
+    name: 'Ayan',
+    favoritePassTime: ['Music', 'Traveling', 'Swimming'],
+  },
 ];
 
 function App() {
@@ -52,6 +70,18 @@ function App() {
         <ul>
           {favorites.map(favorite => (
             <List favor={favorite} key={favorite} />
+          ))}
+        </ul>
+      </div>
+
+      <div className="borders">
+        <h3 className="h3">Profiles</h3>
+        <ul>
+          {profilesFavorites.map(profileFavorite => (
+            <ProfilesFavorites
+              profileFavoriteObj={profileFavorite}
+              key={profileFavorite.name}
+            />
           ))}
         </ul>
       </div>
