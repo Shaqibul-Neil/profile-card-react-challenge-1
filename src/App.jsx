@@ -2,6 +2,7 @@ import './App.css';
 import { Image, Information, SkillList, Learn } from './Profile';
 import Contact from './Contact';
 import ToDo from './ToDo';
+import SecondProfile from './SecondProfile';
 import { List, ProfilesFavorites } from './List';
 
 const info = {
@@ -41,6 +42,7 @@ function App() {
   const time = 50;
   return (
     <div className="container">
+      <SecondProfile />
       <div className="img-div">
         <Image />
       </div>
