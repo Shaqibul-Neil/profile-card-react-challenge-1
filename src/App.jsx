@@ -41,9 +41,9 @@ const profilesFavorites = [
 function App() {
   const time = 50;
   return (
-    <div className="container">
+    <div>
       <SecondProfile />
-      <div className="img-div">
+      {/* <div className="img-div">
         <Image />
       </div>
       <div className="content-div">
@@ -51,7 +51,7 @@ function App() {
       </div>
       <div className="content-div">
         <SkillList />
-      </div>
+      </div> */}
       <div>
         <Learn />
       </div>
